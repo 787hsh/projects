@@ -9,12 +9,23 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 10px;
         }
 
         .button-container {
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            margin-top: 10px;
         }
 
         .button-link {
@@ -22,21 +33,37 @@
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            margin: 10px;
+            padding: 5px 5px; /* Adjusted button size */
+            font-size: 13px;
+            margin: 8px 0; /* Reduced vertical margin */
             cursor: pointer;
+            background-color: black; /* Button background color */
+            color: white; /* Button text color */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Add button border-radius for rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition for background color */
+        }
+
+        button:hover {
+            background-color: purple; /* Change background color on hover */
+        }
+
+        .logo {
+            max-width: 30%;
+            height: auto;
         }
     </style>
 </head>
 <body>
 
-    <h1>Welcome to Your Simple Website</h1>
-
-    <div class="button-container">
-        <a href="https://www.instructables.com/" class="button-link"><button>Instructables</button></a>
-        <a href="https://www.example.com/download" class="button-link"><button>Download</button></a>
-        <a href="https://www.example.com/contact" class="button-link"><button>Contact</button></a>
+    <div class="content-container">
+        <img src="https://i.imgur.com/J0rCKUi.jpg" alt="Logo" class="logo">
+        <div class="button-container">
+            <a href="https://www.instructables.com/" class="button-link"><button>Instructables</button></a>
+            <a href="https://www.example.com/download" class="button-link"><button>Download</button></a>
+            <a href="https://www.example.com/contact" class="button-link"><button>Contact</button></a>
+            
+        </div>
     </div>
 
 </body>
